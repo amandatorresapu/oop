@@ -11,7 +11,7 @@
 # amanda = User("Amanda", "torres")
 # amanda.greeting()	# the specific user's account increases by the amount of the value received
 
-from unicodedata import name
+
 
 
 # class User:		# here's what we have so far
@@ -43,7 +43,8 @@ class User:		# here's what we have so far
         self.account_balance -= amount
     def make_deposit(self, amount):	# takes an argument that is the amount of the deposit
         self.account_balance += amount
-    def display_user_balance(self, amount):	# takes an argument that is the amount of the deposit
+    def display_user_balance(self, amount): # display_user_balance(self) - have this method print the user's name and account balance to the terminal
+# eg. "User: Guido van Rossum, Balance: $150
         self.account_balance = amount
 
 guido = User("guido","smith")
