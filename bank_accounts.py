@@ -5,12 +5,10 @@ class BankAccount:
 
     def deposit(self, amount):
         self.balance += amount
-        print(self.balance)
         return self
 
     def withdraw(self, amount):
         self.balance -= amount
-        print(self.balance)
         return self
 
     def display_account_info(self):
@@ -24,8 +22,8 @@ class BankAccount:
 
 amanda = BankAccount(.02, 500)
 teola = BankAccount(.03, 500)
-max = BankAccount(.02, 500)
-# teola = BankAccount(2, 500)
+max = BankAccount(.01, 500)
+
 
 amanda.deposit(50).deposit(50).deposit(50).withdraw(50).yield_interest().display_account_info()
 teola.deposit(50).deposit(50).deposit(50).withdraw(50).yield_interest().display_account_info()
