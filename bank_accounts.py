@@ -20,6 +20,7 @@ class BankAccount:
         self.balance += interest
         return self
 
+
 amanda = BankAccount(.02, 500)
 teola = BankAccount(.03, 500)
 max = BankAccount(.01, 500)
@@ -28,4 +29,9 @@ max = BankAccount(.01, 500)
 amanda.deposit(50).deposit(50).deposit(50).withdraw(50).yield_interest().display_account_info()
 teola.deposit(50).deposit(50).deposit(50).withdraw(50).yield_interest().display_account_info()
 max.deposit(50).deposit(50).deposit(50).withdraw(50).yield_interest().display_account_info()
+
+class User:
+    # other methods
+    def make_deposit(self, amount):
+    	self.account_balance += amount	# hmmm...the User class doesn't have an account_balance attribute anymore
 
